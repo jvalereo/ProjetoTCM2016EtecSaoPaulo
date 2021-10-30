@@ -8,9 +8,8 @@
 
 
 <a href="#">
-<img align="center"  alt="jonas-Layout" height ="1300" width ="1500" src ="https://user-images.githubusercontent.com/25933386/123878474-76774280-d915-11eb-9e91-ca5707be2dae.jpg"></img>
+<img align="center"  alt="jonas-Layout" height ="1300" width ="1500" src ="https://user-images.githubusercontent.com/25933386/139519751-1a4f70c9-091b-427e-85f5-730bb16b4ff1.jpg"></img>
 </a>
-
 
 ##
 
