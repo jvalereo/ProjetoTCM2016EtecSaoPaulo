@@ -1,0 +1,489 @@
+﻿/* SITE-PROJETO TCM: TRABALHO DE CONCLUSÃO DE MATÉRIA  - CURSO TÉCNICO EM INFORMÁTICA - ETESP*/
+/*Trabalho de conclusão de materia valendo mensão de nota, desenvolver site básico em sala de aula*/
+/*Tema do projeto: Devenvolver um site Agência de Emprego Focus, projeto individual*/
+/*Site não responsivo, não é tcc de conclusão de trabalho, só treinamento e aprendendo a desenvolver técnica básica de TPI*/
+/*ETEC DE SÃO PAULO*/
+/*Data:  07/06/ 2016*/
+/*Aluno: Jonas Valereo - Técnico em Informática*/
+
+
+
+/*Formatação CSS total do corpo do site Agência de Emprego Focus*/
+
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+
+/*Formatação html, body*/
+
+html,body{
+
+    width: 100%;
+    min-height: 100%;
+    margin: 0px;
+
+}
+
+/*Formatação body*/
+
+body {
+
+    background-color:#fff;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+/*Formatação do h1 */
+
+h1{
+
+    font-family: Arial, Calibri, Tahoma;
+    font-size: 17px;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    margin: 20px auto;
+
+}
+
+/*Formatação  div banner */
+
+.div banner{
+
+    width: 100%;
+   
+
+}
+
+.div banner img{
+
+    width: 100%;
+
+}
+
+
+/*Formatação  do container da pagina */
+
+#container {
+    background-color: #d3d3d3;
+    height: 1500px;
+    margin: 0px auto;
+    position: absolute;
+    
+    
+}
+
+
+/*Formatação  div nav principal da pagina */
+
+.nav{
+
+    width: 100%;
+    height: 70px;
+    margin: -10px auto;
+    background-color:#76a8d8;
+    float: left;
+
+}
+
+.nav ul{
+
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    font-family: Arial, Calibri, Tahoma;
+    display: block;
+    list-style-type: none;
+
+}
+
+.nav li{
+
+    width: 100%;
+    list-style: none;
+    display: inline;
+    font-family: Arial, Calibri, Tahoma;
+    font-size: 18px;
+
+}
+
+.nav li a{
+
+    display: inline;
+    width: 100%;
+    padding: 24px 25px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+}
+
+.nav li a:hover{
+
+    color: white;
+    background-color:#c6c6c6;
+    font-size: 14px;
+    top: 10px;
+}
+
+.nav li ul{
+
+    display: none;
+
+}
+
+.nav li:hover ul{
+
+    display: block;
+}
+
+
+
+/*Formatação  da nav fixed do site */
+
+div.nav-fixed{
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+
+
+/*Formatação  da nav abaixo da pagina footer */
+
+.baixo{
+
+    width: 100%;
+    height: 0px;
+    float: left;
+    margin: 0px auto;
+    position: relative;
+
+}
+
+.abaixo ul{
+
+    width: 100%;
+    text-align: left;
+    left: 80px;
+    position: inherit;
+    font-family: Arial, Calibri, Tahoma;
+    list-style-type: none;
+
+}
+
+.abaixo li a{
+
+    width: 100%;
+    line-height: 30px;
+    font-family: Arial, Calibri, Tahoma;
+    font-size: 12px;
+    text-decoration: none;
+    color:#fff;
+
+}
+
+/*Formatação  div center do footer */
+
+#center{
+
+    width: 1250px;
+    float: left;
+    margin: 0px 230px;
+
+}
+
+.abaixo{
+
+    float: left;
+    width: 200px;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.abaixo p{
+
+    margin-top: 10px;
+
+}
+
+/*Formatação  div login da pagina */
+
+
+
+/*Formatação do Slideshow*/
+
+
+.slideshow {
+    max-width: 100%;
+    min-width: 1000px;
+    height: 300px;
+    margin: 0px;
+}
+
+
+
+/*Formatação  div login superior do site */
+
+
+
+.loginBox {
+    border: 2px solid #fff;
+    width: 200px;
+    height: 140px;
+    margin-top: 10px;
+    border-radius: 6px;
+    right: 20px;
+    margin-right: 0px;
+    padding: 10px;
+    position: absolute;
+    background-color: #76a8d8;
+    opacity: 10.0;
+    filter: alpha(opacity=60);
+    top: 0px;
+}
+
+    .loginBox input {
+        border-width: 1px;
+        border-color: #000;
+        border-style: solid;
+        border-radius: 6px;
+        width: 120px;
+    }
+
+        .loginBox input[type="submit"] {
+            border-width: 1px;
+            border-color: #000;
+            border-style: solid;
+            border-radius: 6px;
+            background-color: #fff;
+            margin-left: 40px;
+            width: 80px;
+        }
+
+    .loginBox span {
+        width: 20px;
+        color: #000;
+    }
+
+/*Formatação  div login cadastro superior do site */
+
+
+
+.login1Box {
+    width: 180px;
+    height: 88px;
+    margin-top: 10px;
+    border-width: 1px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 6px;
+    right: 20px;
+    margin-right: 0px;
+    padding: 10px;
+    position: absolute;
+    background-color: #fff;
+    opacity: 10.0;
+    
+}
+
+    .login1Box input {
+        border-width: 1px;
+        border-color: #000;
+        border-style: solid;
+        border-radius: 6px;
+        width: 120px;
+    }
+
+        .login1Box input[type="submit"] {
+            border-width: 1px;
+            border-color: #000;
+            border-style: solid;
+            border-radius: 6px;
+            background-color: #fff;
+            margin-left: 40px;
+            width: 80px;
+        }
+
+    .login1Box span {
+        width: 20px;
+        color: #000;
+    }
+
+
+
+.login input {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    float: left;
+    left: 100px;
+    top: 0px;
+    font-family: Arial,Calibri,Tahoma;
+    display: block;
+    list-style-type: none;
+}
+
+    .login input:focus {
+        background: #fff;
+        box-shadow: none;
+    }
+
+
+/*Formatação  div  header , cabeçalho do site */
+
+header{
+
+    width: 100%;
+    margin: 0px auto;
+}
+
+
+/*Formatação  div  article, conteudo do site */
+
+article{
+
+    background-color:#fff;
+    min-width: 480px;
+    max-width: 1000px;
+    margin: -5px auto;
+    height: 1000px;
+
+}
+
+/*Formatação  div  footer, rodape do site */
+
+footer{
+
+    background-color: #76a8d8;
+    position: absolute;
+    margin: 0px auto;
+    min-width: 100%;
+    max-width: 100%;
+    height: 380px;
+    float: left;
+    
+
+}
+
+/*Formatação  div  Equip do site */
+
+.divEquipe{
+
+    border: 1px solid #406D6E;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 130px;
+    float: left;
+    left: 100px;
+
+}
+
+.divEquipe{
+
+    margin-top: -5pt;
+    margin-left: -5pt;
+
+}
+
+/*Formatação  div link de imagem da pagina home */
+
+#link1{
+
+   position: relative;
+   left: 650px;
+   top: 350px;
+
+}
+
+
+#link2{
+
+    position: relative;
+    left: 650px;
+    top: -80px;
+}
+
+
+#link3{
+
+    position: relative;
+    left: 190px;
+    top: 20px;
+}
+
+
+#link4{
+
+    position: relative;
+    left: 650px;
+    top: 330px;
+}
+
+
+/*Formatação  div video da pagina index/home */
+
+#video{
+
+    float: left;
+    left: 100px;
+    width: 100%;
+    position: relative;
+    margin: 0px auto;
+    top: -480px;
+
+}
+
+#video img, video{
+
+    max-width: 100%;
+
+
+}
+
+/*Formatação  div marcaregis da pagina do site */
+
+.marcaregis{
+
+    width: 100%;
+    float: left;
+    margin: -20px auto;
+
+}
+
+.marcaregis p{
+
+    float: left;
+    width: 1300px;
+    color:#fff;
+    font-family: Arial, Calibri, Tahoma;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+
+/*Formatação  @media do site */
+
+@media all and (min-width: 960px) {
+    body {
+        width: 1500px;
+        margin: auto;
+    }
+}
+

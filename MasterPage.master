@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Agência de Emprego Focus</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="description" content="TCM - Trabalho de Conclusão de Curso / Etec de São Paulo" />
+                <meta name="author" content="Jonas Valereo - Tecnico em Informatica 7/06/2016" />
+                    <meta name="keywords" content="Agência de Emprego Focus, emprego" />
+                    <meta name="robots" content="index.html, follow" />
+                <link rel="stylesheet" type="text/css"  href="css/StyleSheet.css"  />
+            <link rel="icon" href="img/icon.png" />
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="js/JavaScript.js"></script>
+    
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+
+      <!--Formatacao div body da pagina-->
+
+<body>
+
+<!--Formatacao form da pagina-->
+
+<form id="form1" runat="server">
+
+<div>
+    
+        
+    <!--Formatacao div container pagina-->
+
+    <div id="container">
+
+
+    <!--Formatacao div  header menu, cabeçalho , imagem da pagina-->
+
+    <header>
+
+        <!--Formatacao div banner da  pagina-->
+
+        <div class="banner">
+
+            <img src="img/banner.jpg" title="Banner" alt="Banner" />
+
+        </div>
+
+        <!--Formatacao div login  da pagina do site-->
+
+        <div class="sup">
+            <div class="loginBox" runat="server" id="divLogin">
+            <br />
+                <asp:Label ID="lblEmail" runat="server" Text="E-mail:" ForeColor="White"></asp:Label>
+                &nbsp;
+                <asp:TextBox ID="TextBoxLogin" runat="server"  Height="18px"  Width="120px" TextMode="Email" ValidateRequestMode="Disabled" ValidationGroup="dd"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Label ID="lblSenha" runat="server" Text="Senha:" ForeColor="White"></asp:Label>
+                &nbsp;
+                <asp:TextBox ID="TextBoxSenha" runat="server" TextMode="Password"  Height="18px"  Width="120px" ValidateRequestMode="Disabled" ValidationGroup="dd"></asp:TextBox>
+               <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                &nbsp;&nbsp;&nbsp;
+                <asp:Button ID="BtnLogar" runat="server" Text="Logar" OnClick="BtnLogar_Click" />
+                  
+                <br />
+                <asp:Label ID="lblResposta" runat="server" ForeColor="White"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </div>
+
+        </div>
+
+        <!--Formatacao div nav, menu principal da  pagina-->
+
+        <div class="nav">
+            <ul>
+                <li><a href="index.aspx" target="_blank" id="index" runat="server">Home</a></li>
+                    <li><a href="quemsomos.aspx" target="_blank" id="quemsomos" runat="server">Quem Somoso</a></li>
+                            <li><a href="vaga.aspx" target="_blank" id="vaga" runat="server">Vagas</a></li>
+                    <li><a href="equipe.aspx" target="_blank" id="equipe" runat="server">Equipe</a></li>
+                <li><a href="atendimento.aspx" target="_blank" id="atendimento" runat="server">Atendimento</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+        <!--Formatacao div article ,conteuido, imagem e informacao da pagina-->
+
+    <article>
+
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </article>
+
+
+    <!--Formatacao div footer, submenus, marca registra e informacao da pagina-->
+
+    <footer>
+
+
+    <!--Formatacao div ropade da pagina-->
+
+        <div id="rodape">
+
+    <!--Formatacao div center da pagina--> 
+            
+    <div id="center">
+        <div class="abaixo">
+            <h2>Menu:</h2>
+            <hr width="60%" />
+            <ul>
+                <li><a href="index.aspx">Home</a></li>
+                    <li><a href="quemsomos.aspx">Quem Somoso</a></li>
+                            <li><a href="vaga.aspx">Vagas</a></li>
+                    <li><a href="equipe.aspx">Equipe</a></li>
+                <li><a href="atendimento.aspx">Atendimento</a></li>
+            </ul>
+        </div>
+        <div class="abaixo">
+            <h2>Fale Conosco:</h2>
+            <hr width="60%" />
+            <p>0800 - 123 - 3635</p>
+            <p>Segunda à Sábado</p>
+            <p>Horário: 09:00 às 18:00 hrs</p>
+            <p>Rua: Dalvo Trombetas, N.º 56</p>
+            <p>São Paulo</p>
+            <p>(11) 2585 - 7779</p>
+            <p>(11) 95412 - 7412</p>
+        </div>
+        <div class="abaixo">
+            <h2>Fale Conosco:</h2>
+            <hr width="72%" />
+            <p>Inserção no mercado de trabalho</p>
+            <p>Atendimento</p>
+            <p>Politica de Segurança</p>
+            <p>Politica de Privacidade</p>
+        </div>
+        <div class="abaixo">
+            <h2>Redes Sociais:</h2>
+            <hr width="63%" /><br />
+            <ul>
+                <li><a href="#"><img src="img/rede.png" width="35" height="35" title="face", alt="face" /></a></li>
+                    <li><a href="#"><img src="img/rede1.png" width="35" height="35" title="G+", alt="G+" /></a></li>
+                    <li><a href="#"><img src="img/rede2.png" width="35" height="35" title="Twitter", alt="Twitter" /></a></li>
+                    <li><a href="#"><img src="img/rede3.png" width="35" height="35" title="WahtsApp", alt="WahtsApp" /></a></li>
+                    <li><a href="#"><img src="img/rede4.png" width="35" height="35" title="Youtube", alt="Youtube" /></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="marcaregis">
+        <p>Agência de Emprego Focus</p><br />
+        <p>Copyright 2016 Todos os direitos reservados Agência de emprego Focus - Site ativo desde 2016</p>
+        <p>É proibida a reprodução deste site, em qualquer meio eletrônico ou impresso, sem autorização por escrita</p>
+    </div>
+</div>
+
+    </footer>
+        
+</div>
+        </div>
+    </form>
+</body>
+</html>
