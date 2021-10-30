@@ -6,7 +6,6 @@
 
 ##
 
-
 <a href="#">
 <img align="center"  alt="jonas-Layout" height ="1300" width ="1500" src ="https://user-images.githubusercontent.com/25933386/139519751-1a4f70c9-091b-427e-85f5-730bb16b4ff1.jpg"></img>
 </a>
@@ -19,7 +18,9 @@
 
 ##
 
-
+<a href="#">
+<img align="center"  alt="jonas-C#" height ="400" width ="400" src ="https://user-images.githubusercontent.com/25933386/123719626-60f01300-d858-11eb-8e09-fe45c5cb86e5.jpg" style="max-width: 100%;"></img>
+</a>
 
 # Projeto ETESP - Etec de São Paulo - Centro Paula Souza 2015
 
